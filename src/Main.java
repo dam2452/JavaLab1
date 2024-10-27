@@ -1,28 +1,23 @@
 
 
 
-public class Main {
-    public static class JavaVersionChecker {
-        public static void main(String[] args) {
-            String version = System.getProperty("java.version");
-            System.out.println("Task 1: ");
-            System.out.println("Java Version: " + version);
+class Main {
+public static void main(String[] args) {
+    String version = System.getProperty("java.version");
+    System.out.println("Task 1: ");
+    System.out.println("Java Version: " + version);
 
-            System.out.println("\n");
-            System.out.println("Task 2 & 3: ");
-            Shape rectangle = new Rectangle(5, 10);
-            ShapeDescriber.describe(rectangle);
+    System.out.println("\n");
+    System.out.println("Task 2 & 3: ");
+    Shape rectangle = new Rectangle(5, 10);
+    ShapeDescriber.describe(rectangle);
 
-            Shape triangle = new Triangle(3, 4, 5);
-            ShapeDescriber.describe(triangle);
-
+    Shape triangle = new Triangle(3, 4, 5);
+    ShapeDescriber.describe(triangle);
 
 
-        }
 
-
-    }
-}
+}}
 
 abstract class Shape{
     public Shape(){
